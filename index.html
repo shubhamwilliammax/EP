@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham Events Planner | Royal Indian Weddings & Destination Events</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪔</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       SHARED NAVBAR
+       ========================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="ri-fire-fill text-gold"></i>
+        <span>SHUBHAM EVENTS</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Event Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul class="navbar-nav align-items-center" id="authNavLinks">
+          <!-- Rendered dynamically by script.js -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <span class="hero-subtitle"><i class="ri-vip-crown-fill me-2"></i> India's Premier Wedding Architects</span>
+          <h1 class="hero-title">Crafting Grand Royal <span class="text-gold">Shaadi & Celebrations</span></h1>
+          <p class="lead text-light mb-4" style="color: #f7f4fa !important; font-size: 1.15rem;">From opulent palace weddings in Udaipur to vibrant Sangeet nights and destination beach celebrations in Goa, Shubham Events Planner brings your dream Indian wedding to life with traditional majesty.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="events.html" class="btn btn-gold">Explore Packages <i class="ri-arrow-right-line ms-1"></i></a>
+            <button class="btn btn-outline-gold" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Consultation</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       STATS BANNER
+       ========================================== -->
+  <section class="py-5 bg-royal-dark text-white border-bottom border-warning">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-md-3 col-6">
+          <h2 class="text-gold fw-bold display-5 mb-1">500+</h2>
+          <p class="stats-label mb-0">Weddings Managed</p>
+        </div>
+        <div class="col-md-3 col-6">
+          <h2 class="text-gold fw-bold display-5 mb-1">25+</h2>
+          <p class="stats-label mb-0">Palace Venues</p>
+        </div>
+        <div class="col-md-3 col-6">
+          <h2 class="text-gold fw-bold display-5 mb-1">15+</h2>
+          <p class="stats-label mb-0">Years Heritage</p>
+        </div>
+        <div class="col-md-3 col-6">
+          <h2 class="text-gold fw-bold display-5 mb-1">100%</h2>
+          <p class="stats-label mb-0">Satisfaction Rate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FEATURED INDIAN EVENT CATEGORIES
+       ========================================== -->
+  <section class="py-5 bg-cream">
+    <div class="container py-4">
+      <div class="text-center section-header">
+        <span class="section-tag">Traditional & Modern Celebrations</span>
+        <h2 class="section-title">Our Specialty Ceremonies</h2>
+        <p class="text-dark fw-normal col-lg-7 mx-auto">We specialize in complete end-to-end management for traditional Indian wedding rituals, luxury decor, royal dining, and entertainment.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card custom-card">
+            <img src="assets/images/mandap.png" class="card-img-top" alt="Royal Indian Mandap">
+            <div class="card-body p-4">
+              <span class="badge bg-danger mb-2">Signature Package</span>
+              <h4 class="card-title text-royal-red">Royal Palace Shaadi</h4>
+              <p class="card-text">Grand Mandap setup, floral royal decor, baraat elephants/horses, shehnai artists, and traditional royal welcome.</p>
+              <a href="events.html" class="btn btn-outline-gold btn-sm mt-2">View Ceremony Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card custom-card">
+            <img src="assets/images/sangeet.png" class="card-img-top" alt="Sangeet Night Stage">
+            <div class="card-body p-4">
+              <span class="badge bg-warning text-dark mb-2">High Energy</span>
+              <h4 class="card-title text-royal-red">Grand Sangeet & Cocktail</h4>
+              <p class="card-text">Concert-style stage setups, LED walls, choreography management, celebrity DJs, and gourmet bar service.</p>
+              <a href="events.html" class="btn btn-outline-gold btn-sm mt-2">View Ceremony Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card custom-card">
+            <img src="assets/images/haldi.png" class="card-img-top" alt="Haldi & Mehendi Mela">
+            <div class="card-body p-4">
+              <span class="badge bg-warning text-dark mb-2">Vibrant Rituals</span>
+              <h4 class="card-title text-royal-red">Haldi & Mehendi Mela</h4>
+              <p class="card-text">Marigold floral decor, yellow theme seating, dhol artists, live mehendi designers, and organic haldi setup.</p>
+              <a href="events.html" class="btn btn-outline-gold btn-sm mt-2">View Ceremony Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BUDGET ESTIMATOR TOOL SECTION
+       ========================================== -->
+  <section class="py-5 bg-royal-dark text-white">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="section-tag text-gold">Instant Budget Estimator</span>
+          <h2 class="text-white display-6 mb-3">Plan Your Event Budget In Seconds</h2>
+          <p class="text-light">Adjust the guest capacity and ceremony type to calculate estimated investment for your dream Indian event instantly.</p>
+          
+          <form class="mt-4">
+            <div class="mb-4">
+              <label class="form-label text-gold fw-semibold">Number of Guests</label>
+              <div class="h4 text-white" id="calcGuestDisplay">250 Guests</div>
+              <input type="range" class="form-range" id="calcGuestSlider" min="100" max="1500" step="50" value="250">
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label text-gold fw-semibold" for="calcEventType">Ceremony / Package Category</label>
+              <select class="form-select bg-dark text-light border-warning" id="calcEventType">
+                <option value="Royal Wedding" selected>Royal Palace Wedding (Jaipur / Udaipur)</option>
+                <option value="Destination Wedding">Destination Beach Wedding (Goa)</option>
+                <option value="Sangeet & Mehendi">Grand Sangeet & Mehendi Extravaganza</option>
+                <option value="Haldi Celebration">Vibrant Haldi Ceremony</option>
+                <option value="Corporate Gala">Corporate Luxury Gala</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card custom-card bg-dark border-warning p-4 text-center">
+            <span class="text-uppercase tracking-wider text-light small">Estimated Package Cost</span>
+            <div class="display-4 text-gold fw-bold my-3" id="calcPriceOutput">₹5,25,000</div>
+            <p class="small text-light mb-4">*Includes venue coordination, full floral decor, catering management, sound/lights, and event team execution.</p>
+            <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#bookingModal">Book This Package Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ROYAL VENUES DESTINATION SHOWCASE
+       ========================================== -->
+  <section class="py-5 bg-cream">
+    <div class="container py-4">
+      <div class="text-center section-header">
+        <span class="section-tag">Exquisite Locations</span>
+        <h2 class="section-title">Royal Indian Destinations</h2>
+        <p class="text-dark fw-normal">We partner with premier heritage palaces, luxury resorts, and beach properties across India.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="assets/images/palace.png" class="card-img-top" alt="Udaipur & Jaipur Palaces">
+            <div class="card-body p-4 text-center">
+              <h4 class="card-title text-royal-red">Udaipur & Jaipur</h4>
+              <p class="card-text">Historic heritage palaces, royal courtyards, and lake-view grand venues for royal weddings.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="assets/images/goa.png" class="card-img-top" alt="Goa Beachfront Wedding">
+            <div class="card-body p-4 text-center">
+              <h4 class="card-title text-royal-red">Goa Beachfronts</h4>
+              <p class="card-text">Sunset oceanfront mandaps, beach resort lawns, and tropical sundowner parties.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="assets/images/gala.png" class="card-img-top" alt="Delhi & Mumbai Palaces">
+            <div class="card-body p-4 text-center">
+              <h4 class="card-title text-royal-red">Delhi NCR & Mumbai</h4>
+              <p class="card-text">5-Star luxury hotel ballrooms, sprawling farmhouse lawns, and elite banquet spaces.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BOOKING MODAL
+       ========================================== -->
+  <div class="modal fade" id="bookingModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-royal-dark text-white border-warning">
+        <div class="modal-header border-bottom border-warning">
+          <h5 class="modal-title text-gold"><i class="ri-calendar-check-line me-2"></i> Book Event Consultation</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="bookingForm">
+            <div class="mb-3">
+              <label class="form-label text-gold" for="bookingEventType">Event Type</label>
+              <select class="form-select bg-dark text-light border-warning" id="bookingEventType" required>
+                <option value="Royal Palace Shaadi">Royal Palace Shaadi</option>
+                <option value="Grand Sangeet & Cocktail">Grand Sangeet & Cocktail</option>
+                <option value="Haldi & Mehendi Mela">Haldi & Mehendi Mela</option>
+                <option value="Destination Beach Wedding">Destination Beach Wedding</option>
+                <option value="Corporate Gala">Corporate Gala</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label text-gold" for="bookingCity">Preferred City / Destination</label>
+              <input type="text" class="form-control bg-dark text-light border-warning" id="bookingCity" placeholder="e.g. Udaipur, Jaipur, Goa, Delhi" required>
+            </div>
+
+            <div class="row g-3 mb-3">
+              <div class="col-6">
+                <label class="form-label text-gold" for="bookingDate">Tentative Date</label>
+                <input type="date" class="form-control bg-dark text-light border-warning" id="bookingDate" required>
+              </div>
+              <div class="col-6">
+                <label class="form-label text-gold" for="bookingGuests">Estimated Guests</label>
+                <input type="number" class="form-control bg-dark text-light border-warning" id="bookingGuests" placeholder="250" required>
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label class="form-label text-gold" for="bookingBudget">Approximate Budget (₹)</label>
+              <input type="number" class="form-control bg-dark text-light border-warning" id="bookingBudget" placeholder="500000" required>
+            </div>
+
+            <button type="submit" class="btn btn-gold w-100">Submit Booking Inquiry <i class="ri-send-plane-fill ms-1"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       SHARED BIG FOOTER
+       ========================================== -->
+  <footer class="big-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="footer-brand d-inline-block mb-3" href="index.html">
+            <i class="ri-fire-fill text-gold me-2"></i>SHUBHAM EVENTS
+          </a>
+          <p>Shubham Events Planner is India's leading luxury wedding management company. We design and execute majestic royal weddings, Sangeet galas, and corporate events across India.</p>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-line"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Event Packages</a></li>
+            <li><a href="about.html">About Heritage</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="profile.html">My Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Our Event Hubs</h5>
+          <ul class="footer-links">
+            <li><i class="ri-map-pin-line text-gold me-2"></i> Jaipur: C-Scheme, Pink City</li>
+            <li><i class="ri-map-pin-line text-gold me-2"></i> Mumbai: Bandra West</li>
+            <li><i class="ri-map-pin-line text-gold me-2"></i> Delhi NCR: South Extension</li>
+            <li><i class="ri-map-pin-line text-gold me-2"></i> Goa: Miramar Beach Rd</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contact & Support</h5>
+          <p class="small"><i class="ri-phone-line text-gold me-2"></i> +91 98765 43210</p>
+          <p class="small"><i class="ri-mail-line text-gold me-2"></i> info@shubhamevents.in</p>
+          <p class="small"><i class="ri-time-line text-gold me-2"></i> Mon - Sat: 9:30 AM - 8:00 PM</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Shubham Events Planner. All Rights Reserved. Designed with Royal Passion for India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- External Script File -->
+  <script src="script.js"></script>
+</body>
+</html>

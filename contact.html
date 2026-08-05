@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Shubham Events Planner</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪔</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       SHARED NAVBAR
+       ========================================== -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <i class="ri-fire-fill text-gold"></i>
+        <span>SHUBHAM EVENTS</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">Event Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+        </ul>
+        <ul class="navbar-nav align-items-center" id="authNavLinks">
+          <!-- Rendered dynamically by script.js -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       PAGE HEADER BANNER
+       ========================================== -->
+  <section class="py-5 bg-royal-dark text-white text-center border-bottom border-warning">
+    <div class="container py-4">
+      <span class="text-gold tracking-wider text-uppercase font-weight-bold">Let's Connect</span>
+      <h1 class="display-4 fw-bold mt-2">Get In Touch With Us</h1>
+      <p class="lead text-light opacity-75 col-lg-6 mx-auto">Have questions about organizing your royal wedding or gala? Contact our luxury event directors today.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT FORM & OFFICES
+       ========================================== -->
+  <section class="py-5 bg-cream">
+    <div class="container py-4">
+      <div class="row g-4 align-items-start">
+        
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+          <div class="card custom-card p-4 p-md-5">
+            <h3 class="text-royal-red mb-3"><i class="ri-mail-send-line text-gold me-2"></i>Send Us A Message</h3>
+            <p class="text-muted mb-4">Fill out the inquiry form below and our luxury event team will contact you within 24 hours.</p>
+            
+            <form id="contactForm">
+              <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                  <label class="form-label text-dark fw-semibold" for="contactName">Your Name *</label>
+                  <input type="text" class="form-control" id="contactName" placeholder="e.g. Rahul Sharma" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label text-dark fw-semibold" for="contactEmail">Email Address *</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="rahul@gmail.com" required>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label text-dark fw-semibold" for="contactPhone">Phone Number *</label>
+                <input type="tel" class="form-control" id="contactPhone" placeholder="+91 98765 43210" required>
+              </div>
+
+              <div class="mb-4">
+                <label class="form-label text-dark fw-semibold" for="contactMessage">Event Details & Requirements *</label>
+                <textarea class="form-control" id="contactMessage" rows="5" placeholder="Share your event date, preferred city, guest count, or decor vision..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-royal w-100 py-3">Send Message <i class="ri-send-plane-fill ms-1"></i></button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Office Info Cards -->
+        <div class="col-lg-5">
+          <div class="card custom-card bg-royal-dark text-white p-4 mb-3 border-warning shadow">
+            <h5 class="text-gold mb-2"><i class="ri-building-4-line me-2"></i> Head Atelier - Jaipur</h5>
+            <p class="small text-light mb-1"><i class="ri-map-pin-line text-gold me-2"></i> Plot 45, Royal Enclave, C-Scheme, Jaipur - 302001</p>
+            <p class="small text-light mb-1"><i class="ri-phone-line text-gold me-2"></i> +91 141 234 5678 / +91 98765 43210</p>
+            <p class="small text-light mb-0"><i class="ri-mail-line text-gold me-2"></i> jaipur@shubhamevents.in</p>
+          </div>
+
+          <div class="card custom-card bg-royal-dark text-white p-4 mb-3 border-warning shadow">
+            <h5 class="text-gold mb-2"><i class="ri-building-line me-2"></i> Mumbai Office</h5>
+            <p class="small text-light mb-1"><i class="ri-map-pin-line text-gold me-2"></i> Suite 302, Hill Road, Bandra West, Mumbai - 400050</p>
+            <p class="small text-light mb-0"><i class="ri-phone-line text-gold me-2"></i> +91 22 8765 4321</p>
+          </div>
+
+          <div class="card custom-card bg-royal-dark text-white p-4 border-warning shadow">
+            <h5 class="text-gold mb-2"><i class="ri-building-line me-2"></i> Delhi NCR Hub</h5>
+            <p class="small text-light mb-1"><i class="ri-map-pin-line text-gold me-2"></i> Ring Road, South Extension II, New Delhi - 110049</p>
+            <p class="small text-light mb-0"><i class="ri-phone-line text-gold me-2"></i> +91 11 4321 8765</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FREQUENTLY ASKED QUESTIONS (FAQ)
+       ========================================== -->
+  <section class="py-5 bg-royal-dark text-white">
+    <div class="container py-4">
+      <div class="text-center section-header">
+        <span class="section-tag text-gold">Common Queries</span>
+        <h2 class="text-white display-6">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="accordion accordion-flush" id="faqAccordion">
+            
+            <div class="accordion-item bg-dark text-white border-bottom border-warning">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-dark text-gold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  How far in advance should we book Shubham Events Planner?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-light opacity-75">
+                  For peak Indian wedding season (October to March), we recommend booking 6 to 12 months in advance to secure prime palace venues and top vendor artists.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-dark text-white border-bottom border-warning">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-dark text-gold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  Do you handle destination weddings outside of Rajasthan?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-light opacity-75">
+                  Yes! We regularly execute destination weddings in Goa, Kerala, Mussoorie, Jim Corbett, Delhi NCR, Mumbai, as well as international destinations like Thailand and Dubai.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-dark text-white border-bottom border-warning">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-dark text-gold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Can we customize our catering menu and decor designs?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-light opacity-75">
+                  Absolutely. Every celebration we manage is 100% bespoke. We work with leading Michelin-recommended & royal chefs for authentic Marwari, Gujarati, Punjabi, South Indian, and Global fusion menus.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SHARED BIG FOOTER
+       ========================================== -->
+  <footer class="big-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="footer-brand d-inline-block mb-3" href="index.html">
+            <i class="ri-fire-fill text-gold me-2"></i>SHUBHAM EVENTS
+          </a>
+          <p>Shubham Events Planner is India's leading luxury wedding management company. We design and execute majestic royal weddings, Sangeet galas, and corporate events across India.</p>
+          <div class="social-icons mt-3">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-line"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-title">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Event Packages</a></li>
+            <li><a href="about.html">About Heritage</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="profile.html">My Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Our Event Hubs</h5>
+          <ul class="footer-links">
+            <li><i class="ri-map-pin-line text-gold me-2"></i> Jaipur: C-Scheme, Pink City</li>
+            <li><i class="ri-map-pin-line text-gold me-2"></i> Mumbai: Bandra West</li>
+            <li><i class="ri-map-pin-line text-gold me-2"></i> Delhi NCR: South Extension</li>
+            <li><i class="ri-map-pin-line text-gold me-2"></i> Goa: Miramar Beach Rd</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-title">Contact & Support</h5>
+          <p class="small"><i class="ri-phone-line text-gold me-2"></i> +91 98765 43210</p>
+          <p class="small"><i class="ri-mail-line text-gold me-2"></i> info@shubhamevents.in</p>
+          <p class="small"><i class="ri-time-line text-gold me-2"></i> Mon - Sat: 9:30 AM - 8:00 PM</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2026 Shubham Events Planner. All Rights Reserved. Designed with Royal Passion for India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- External Script File -->
+  <script src="script.js"></script>
+</body>
+</html>

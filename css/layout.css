@@ -1,0 +1,535 @@
+/* ==========================================================================
+   LAYOUT SECTIONS
+   Hero, Stats, Services, Estimator, Portfolio, Timeline, Testimonials & Footer
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. HERO SECTION
+   -------------------------------------------------------------------------- */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero-title {
+  margin: 1.2rem 0;
+  font-size: clamp(3rem, 5.5vw, 5rem);
+}
+
+.hero-description {
+  font-size: 1.15rem;
+  margin-bottom: 2.5rem;
+  max-width: 540px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: var(--shadow-lg), 0 0 50px rgba(212, 175, 55, 0.15);
+}
+
+.hero-img-wrapper img {
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.hero-img-wrapper:hover img {
+  transform: scale(1.04);
+}
+
+.hero-floating-badge {
+  position: absolute;
+  bottom: 2.5rem;
+  left: -2rem;
+  padding: 1.25rem 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(18, 18, 24, 0.85);
+  backdrop-filter: blur(16px);
+  border: var(--border-glass-bright);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+}
+
+.hero-badge-icon {
+  font-size: 2rem;
+  color: var(--clr-gold-primary);
+}
+
+.hero-badge-text h4 {
+  font-size: 1.2rem;
+  color: var(--clr-gold-primary);
+}
+
+.hero-badge-text p {
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   2. STATS SECTION
+   -------------------------------------------------------------------------- */
+.stats-section {
+  padding: 3.5rem 0;
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+  background: rgba(212, 175, 55, 0.02);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 3rem;
+  color: var(--clr-gold-primary);
+  margin-bottom: 0.2rem;
+}
+
+.stat-item p {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  color: var(--clr-text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   3. SERVICES SECTION
+   -------------------------------------------------------------------------- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.service-number {
+  font-family: var(--ff-heading);
+  font-size: 2.5rem;
+  color: rgba(212, 175, 55, 0.25);
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--clr-gold-primary);
+  margin-bottom: 1.75rem;
+}
+
+.service-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.service-features {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.service-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--clr-text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.service-feature-item i {
+  color: var(--clr-gold-primary);
+  font-size: 0.9rem;
+}
+
+/* --------------------------------------------------------------------------
+   4. INTERACTIVE COST ESTIMATOR TOOL SECTION
+   -------------------------------------------------------------------------- */
+.estimator-container {
+  background: var(--clr-bg-card);
+  border: var(--border-glass-bright);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem;
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+.estimator-controls {
+  display: flex;
+  flex-direction: flex-col;
+  gap: 1.75rem;
+}
+
+.estimator-output {
+  background: rgba(10, 10, 13, 0.9);
+  border: 1px solid var(--clr-gold-primary);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 30px rgba(212, 175, 55, 0.08);
+}
+
+.estimated-price-title {
+  font-family: var(--ff-subheading);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 0.85rem;
+  color: var(--clr-text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.estimated-price-value {
+  font-family: var(--ff-heading);
+  font-size: 3.8rem;
+  color: var(--clr-gold-primary);
+  margin: 0.5rem 0 1.5rem 0;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* --------------------------------------------------------------------------
+   5. PORTFOLIO GALLERY SECTION
+   -------------------------------------------------------------------------- */
+.portfolio-filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  padding: 0.6rem 1.8rem;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  color: var(--clr-text-secondary);
+  font-family: var(--ff-subheading);
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-tab:hover, .filter-tab.active {
+  background: var(--clr-gold-gradient);
+  color: #000;
+  border-color: transparent;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.portfolio-item {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  height: 380px;
+  cursor: pointer;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(10, 10, 13, 0.95) 0%, rgba(10, 10, 13, 0.2) 60%, transparent 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.08);
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-tag {
+  font-family: var(--ff-subheading);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--clr-gold-primary);
+  text-transform: uppercase;
+  margin-bottom: 0.3rem;
+}
+
+.portfolio-item-title {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-location {
+  font-size: 0.85rem;
+  color: var(--clr-text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   6. PLANNING PROCESS TIMELINE
+   -------------------------------------------------------------------------- */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--clr-gold-primary), transparent);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  position: relative;
+  margin-bottom: 3.5rem;
+  width: 50%;
+}
+
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+  margin-left: auto;
+  justify-content: flex-start;
+  padding-right: 0;
+  padding-left: 50px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 1.5rem;
+  right: -13px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--clr-bg-main);
+  border: 2px solid var(--clr-gold-primary);
+  box-shadow: 0 0 15px var(--clr-gold-primary);
+  z-index: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-dot {
+  right: auto;
+  left: -13px;
+}
+
+.timeline-card {
+  padding: 2rem;
+  width: 100%;
+}
+
+.timeline-step {
+  font-family: var(--ff-subheading);
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  color: var(--clr-gold-primary);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   7. TESTIMONIALS
+   -------------------------------------------------------------------------- */
+.testimonials-slider {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-card {
+  text-align: center;
+  padding: 3.5rem 2.5rem;
+}
+
+.testimonial-quote {
+  font-family: var(--ff-heading);
+  font-size: 1.8rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--clr-text-primary);
+  margin-bottom: 2rem;
+}
+
+.testimonial-author h4 {
+  font-size: 1.3rem;
+  color: var(--clr-gold-primary);
+}
+
+.testimonial-author p {
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   8. FOOTER
+   -------------------------------------------------------------------------- */
+.footer {
+  background: #060608;
+  border-top: 1px solid rgba(212, 175, 55, 0.15);
+  padding: 5rem 0 2rem 0;
+  margin-top: 5rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.footer-brand p {
+  margin-top: 1rem;
+  max-width: 300px;
+}
+
+.footer-col h4 {
+  font-family: var(--ff-subheading);
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--clr-gold-primary);
+  margin-bottom: 1.5rem;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a:hover {
+  color: var(--clr-gold-primary);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--clr-text-muted);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-grid, .estimator-container, .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-floating-badge {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .stats-grid, .services-grid, .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item, .timeline-item:nth-child(even) {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 0;
+  }
+
+  .timeline-dot, .timeline-item:nth-child(even) .timeline-dot {
+    left: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-grid, .services-grid, .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
