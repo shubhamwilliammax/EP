@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderNavbarState();
 
   // Route/Page Specific Handlers
+  initHeroSlider();
   initSignupForm();
   initLoginForm();
   initProfilePage();
@@ -26,6 +27,23 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initBudgetEstimator();
 });
+
+/* --------------------------------------------------------------------------
+   0. HERO FULLSCREEN AUTO SLIDER (3 SECONDS INTERVAL)
+   -------------------------------------------------------------------------- */
+function initHeroSlider() {
+  const slides = document.querySelectorAll('.hero-slide');
+  if (!slides || slides.length === 0) return;
+
+  let currentSlide = 0;
+  const slideInterval = 3000; // 3 seconds per slide
+
+  setInterval(() => {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }, slideInterval);
+}
 
 /* --------------------------------------------------------------------------
    1. NAVBAR & AUTHENTICATION STATE
