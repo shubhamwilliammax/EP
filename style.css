@@ -282,6 +282,28 @@ p {
   object-fit: cover;
 }
 
+/* Team Showcase Card & Face Alignment Fix */
+.team-card {
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.35s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--clr-champagne-gold);
+  box-shadow: 0 15px 35px rgba(212, 175, 55, 0.25);
+}
+
+.team-img,
+.team-card .card-img-top {
+  height: 320px !important;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center !important;
+  border-bottom: 2px solid var(--clr-champagne-gold);
+}
+
 .card-text {
   color: #332d3d !important;
   font-size: 0.95rem;
