@@ -1,6 +1,6 @@
 /* ==========================================================================
    SHUBHAM EVENTS PLANNER - INDIA EDITION
-   External Stylesheet (Bootstrap 5 Enhancements & Indian Royal Theme)
+   External Core Stylesheet (Bootstrap 5 Enhancements & Indian Royal Theme)
    ========================================================================== */
 
 /* Root Color Tokens - Indian Royal Wedding & Event Palette */
@@ -225,11 +225,11 @@ p {
 }
 
 /* Slide background images */
-.slide-mandap { background-image: url('assets/images/mandap.png'); }
-.slide-palace { background-image: url('assets/images/palace.png'); }
-.slide-sangeet { background-image: url('assets/images/sangeet.png'); }
-.slide-goa { background-image: url('assets/images/goa.png'); }
-.slide-gala { background-image: url('assets/images/gala.png'); }
+.slide-mandap { background-image: url('../assets/images/mandap.png'); }
+.slide-palace { background-image: url('../assets/images/palace.png'); }
+.slide-sangeet { background-image: url('../assets/images/sangeet.png'); }
+.slide-goa { background-image: url('../assets/images/goa.png'); }
+.slide-gala { background-image: url('../assets/images/gala.png'); }
 
 .hero-overlay {
   position: absolute;
@@ -531,19 +531,19 @@ select:-webkit-autofill {
 .contact-hero {
   background: linear-gradient(180deg, rgba(14, 10, 18, 0.78) 0%, rgba(18, 14, 22, 0.94) 100%), 
               radial-gradient(circle at center, rgba(128, 0, 32, 0.3) 0%, transparent 70%),
-              url('assets/images/palace.png') center/cover no-repeat;
+              url('../assets/images/palace.png') center/cover no-repeat;
 }
 
 .events-hero {
   background: linear-gradient(180deg, rgba(14, 10, 18, 0.78) 0%, rgba(18, 14, 22, 0.94) 100%), 
               radial-gradient(circle at center, rgba(128, 0, 32, 0.35) 0%, transparent 70%),
-              url('assets/images/gala.png') center/cover no-repeat;
+              url('../assets/images/gala.png') center/cover no-repeat;
 }
 
 .about-hero {
   background: linear-gradient(180deg, rgba(14, 10, 18, 0.78) 0%, rgba(18, 14, 22, 0.94) 100%), 
               radial-gradient(circle at center, rgba(128, 0, 32, 0.35) 0%, transparent 70%),
-              url('assets/images/mandap.png') center/cover no-repeat;
+              url('../assets/images/mandap.png') center/cover no-repeat;
 }
 
 .page-hero .breadcrumb-nav,
@@ -726,5 +726,3 @@ select:-webkit-autofill {
   color: #ffffff;
   text-decoration: underline;
 }
-
-

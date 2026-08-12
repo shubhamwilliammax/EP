@@ -1,0 +1,184 @@
+/* ==========================================================================
+   SHUBHAM EVENTS PLANNER - INDIA EDITION
+   Responsive Stylesheet (Mobile, Tablet, Desktop & Touch Optimization)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. LARGE DESKTOP & MONITORS (1200px and up)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 3.8rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. TABLET LANDSCAPE & SMALL DESKTOP (992px to 1199px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199.98px) {
+  .hero-section {
+    min-height: 80vh;
+  }
+  
+  .hero-title {
+    font-size: 3.2rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLETS & MOBILE NAVIGATION DRAWER (768px to 991px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+  .navbar-custom {
+    padding: 0.6rem 1rem;
+  }
+
+  .navbar-collapse {
+    background-color: var(--clr-dark-bg);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 12px;
+    padding: 1.2rem;
+    margin-top: 0.8rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  }
+
+  .nav-link {
+    padding: 0.6rem 0 !important;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  }
+
+  .hero-section {
+    min-height: 75vh;
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-content-wrapper .d-flex {
+    justify-content: center;
+  }
+
+  .page-hero,
+  .contact-hero,
+  .events-hero,
+  .about-hero {
+    padding: 5rem 0 3.8rem 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. MOBILE DEVICES (Portrait & Small Tablets < 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  .hero-section {
+    min-height: 70vh;
+    padding: 3rem 0;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+
+  .page-hero,
+  .contact-hero,
+  .events-hero,
+  .about-hero {
+    padding: 4.2rem 0 3rem 0;
+  }
+
+  .page-hero .hero-title-main,
+  .contact-hero .hero-title-main,
+  .events-hero .hero-title-main,
+  .about-hero .hero-title-main {
+    font-size: 2.2rem;
+  }
+
+  .contact-hero-pills {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1.5rem;
+  }
+
+  .hero-pill-item {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    font-size: 0.82rem;
+    padding: 8px 16px;
+  }
+
+  .btn-gold,
+  .btn-royal,
+  .btn-outline-gold {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+
+  .team-img,
+  .team-card .card-img-top {
+    height: 270px !important;
+  }
+
+  .toast-container-custom {
+    top: 75px;
+    right: 12px;
+    left: 12px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. EXTRA SMALL MOBILE SCREENS (< 576px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .hero-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 1.2rem;
+  }
+
+  .hero-gold-divider .line {
+    width: 35px;
+  }
+
+  .big-footer {
+    padding: 3.5rem 0 1.5rem 0;
+  }
+
+  .social-icons a {
+    width: 36px;
+    height: 36px;
+  }
+}
