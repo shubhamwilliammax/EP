@@ -113,6 +113,12 @@ function initSignupForm() {
       return;
     }
 
+    const privacyAgree = document.getElementById('signupPrivacyAgree');
+    if (privacyAgree && !privacyAgree.checked) {
+      showToast('Please agree to our Privacy Policy to register!', 'warning');
+      return;
+    }
+
     const users = JSON.parse(localStorage.getItem('shubham_users')) || [];
     const existingUser = users.find(u => u.email === email);
 

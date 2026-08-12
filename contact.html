@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Shubham Events Planner & Lead Event Architect Shubham Kr Sharma for bespoke royal wedding consultations in Jaipur, Udaipur, Goa, and Mumbai.">
+  <meta name="keywords" content="Contact Shubham Events, Wedding Consultation Jaipur, Udaipur Wedding Inquiry, Shubham Kr Sharma Phone">
+  <meta property="og:title" content="Contact Us | Shubham Events Planner">
+  <meta property="og:description" content="Get in touch with Shubham Events Planner to book royal shaadi & destination event consultations.">
   <title>Contact Us | Shubham Events Planner</title>
 
   <!-- Favicon -->
@@ -52,13 +56,37 @@
   </nav>
 
   <!-- ==========================================
-       PAGE HEADER BANNER
+       PAGE HEADER HERO BANNER WITH BACKGROUND IMAGE
        ========================================== -->
-  <section class="py-5 bg-royal-dark text-white text-center border-bottom border-warning">
-    <div class="container py-4">
-      <span class="text-gold tracking-wider text-uppercase font-weight-bold">Let's Connect</span>
-      <h1 class="display-4 fw-bold mt-2">Get In Touch With Us</h1>
-      <p class="lead text-light opacity-75 col-lg-6 mx-auto">Have questions about organizing your royal wedding or gala? Contact our luxury event directors today.</p>
+  <section class="contact-hero text-center" id="contact-hero">
+    <div class="container py-2">
+      <!-- Breadcrumb Navigation -->
+      <nav class="breadcrumb-nav mb-3">
+        <a href="index.html"><i class="ri-home-4-line me-1"></i> Home</a>
+        <i class="ri-arrow-right-s-line mx-2 text-gold"></i>
+        <span class="active">Contact Us</span>
+      </nav>
+
+      <div class="mb-2">
+        <span class="hero-badge"><i class="ri-vip-crown-fill me-2"></i> Let's Connect</span>
+      </div>
+
+      <h1 class="hero-title-main text-white mt-3">Get In Touch <span class="text-gold">With Us</span></h1>
+
+      <div class="hero-gold-divider">
+        <span class="line"></span>
+        <i class="ri-vip-crown-2-fill"></i>
+        <span class="line"></span>
+      </div>
+
+      <p class="lead text-light opacity-90 col-lg-7 mx-auto" style="color: #f7f4fa !important; font-size: 1.15rem; line-height: 1.7;">Have questions about organizing your royal palace wedding, grand Sangeet gala, or destination beach celebration? Contact Shubham Kr Sharma & our luxury event directors today.</p>
+
+      <!-- Quick Contact Pills Bar -->
+      <div class="contact-hero-pills">
+        <div class="hero-pill-item"><i class="ri-phone-fill"></i> <strong>Priority Hotline:</strong> +91 98765 43210</div>
+        <div class="hero-pill-item"><i class="ri-map-pin-2-fill"></i> <strong>Head Atelier:</strong> Jaipur, Rajasthan</div>
+        <div class="hero-pill-item"><i class="ri-mail-fill"></i> <strong>Direct Email:</strong> info@shubhamevents.in</div>
+      </div>
     </div>
   </section>
 
@@ -95,6 +123,11 @@
               <div class="mb-4">
                 <label class="form-label text-dark fw-semibold" for="contactMessage">Event Details & Requirements *</label>
                 <textarea class="form-control" id="contactMessage" rows="5" placeholder="Share your event date, preferred city, guest count, or decor vision..." required></textarea>
+              </div>
+
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="contactPrivacyConsent" checked required>
+                <label class="form-check-label small text-muted" for="contactPrivacyConsent">I agree to the processing of my event details according to the <a href="#" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal" class="privacy-policy-link">Privacy Policy</a>.</label>
               </div>
 
               <button type="submit" class="btn btn-royal w-100 py-3">Send Message <i class="ri-send-plane-fill ms-1"></i></button>
@@ -211,9 +244,8 @@
           <ul class="footer-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="events.html">Event Packages</a></li>
-            <li><a href="about.html">About Heritage</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="profile.html">My Dashboard</a></li>
           </ul>
         </div>
 
@@ -236,10 +268,47 @@
       </div>
 
       <div class="footer-bottom">
-        <p class="mb-0">&copy; 2026 Shubham Events Planner. All Rights Reserved. Designed with Royal Passion for India.</p>
+        <p class="mb-0">&copy; 2026 Shubham Events Planner. All Rights Reserved. Designed for <strong>Shubham Kr Sharma</strong> | <a href="#" class="privacy-policy-link ms-2" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal"><i class="ri-shield-check-line me-1"></i>Privacy Policy</a></p>
       </div>
     </div>
   </footer>
+
+  <!-- ==========================================
+       BOOTSTRAP PRIVACY POLICY & TERMS MODAL
+       ========================================== -->
+  <div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="privacyPolicyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-privacy-content">
+        <div class="modal-header modal-privacy-header">
+          <h5 class="modal-title text-gold" id="privacyPolicyModalLabel">
+            <i class="ri-shield-keyhole-line me-2"></i>Privacy Policy & Client Data Protection
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-privacy-body">
+          <p class="mb-3">At <strong>Shubham Events Planner</strong> (spearheaded by Shubham Kr Sharma), preserving client confidentiality and protecting personal information is our sacred commitment. This Privacy Policy details how we collect, use, safeguard, and manage your data across our luxury event architecture services.</p>
+          
+          <h6 class="privacy-section-title"><i class="ri-information-line"></i> 1. Data We Collect</h6>
+          <p>When inquiring about or booking an event, we collect information essential for wedding execution: your name, email address, phone number, destination/city preference, estimated guest count, and tentative budget.</p>
+
+          <h6 class="privacy-section-title"><i class="ri-lock-2-line"></i> 2. Confidentiality & Security</h6>
+          <p>We implement strict encryption protocols and secure storage. High-profile celebrity weddings, industrial galas, and private family celebrations managed by Shubham Events are bound by strict non-disclosure agreements (NDAs) upon client request.</p>
+
+          <h6 class="privacy-section-title"><i class="ri-shake-hands-line"></i> 3. Third-Party Vendor Coordination</h6>
+          <p>To execute royal mandap decor, luxury catering, charter logistics, and artist bookings, relevant event details are shared strictly with verified partner hotels (e.g., Rajasthan heritage palaces, Goa resorts) and master artisans.</p>
+
+          <h6 class="privacy-section-title"><i class="ri-user-settings-line"></i> 4. Your Data Rights</h6>
+          <p>Clients retain full ownership of their personal information. You can inspect, update, or request complete deletion of your booking records at any time through your User Dashboard or by emailing <strong>info@shubhamevents.in</strong>.</p>
+
+          <h6 class="privacy-section-title"><i class="ri-customer-service-2-line"></i> 5. Contact & Data Officer</h6>
+          <p class="mb-0">For privacy inquiries or NDA execution, contact our Lead Event Director: <strong>Shubham Kr Sharma</strong>, C-Scheme, Pink City, Jaipur, Rajasthan, India (+91 98765 43210).</p>
+        </div>
+        <div class="modal-footer border-top border-secondary p-3">
+          <button type="button" class="btn btn-gold btn-sm px-4" data-bs-dismiss="modal">I Understand & Accept</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Bootstrap 5 JS Bundle CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
