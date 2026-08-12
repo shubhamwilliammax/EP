@@ -517,18 +517,39 @@ select:-webkit-autofill {
 }
 
 /* Page Banner Hero with Background Image & Gradient Overlay */
-.contact-hero {
+.page-hero,
+.contact-hero,
+.events-hero,
+.about-hero {
   position: relative;
-  background: linear-gradient(180deg, rgba(14, 10, 18, 0.78) 0%, rgba(18, 14, 22, 0.94) 100%), 
-              radial-gradient(circle at center, rgba(128, 0, 32, 0.3) 0%, transparent 70%),
-              url('assets/images/palace.png') center/cover no-repeat;
   padding: 6.5rem 0 5rem 0;
   color: #ffffff;
   border-bottom: 2px solid var(--clr-champagne-gold);
   box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.85);
 }
 
-.contact-hero .breadcrumb-nav {
+.contact-hero {
+  background: linear-gradient(180deg, rgba(14, 10, 18, 0.78) 0%, rgba(18, 14, 22, 0.94) 100%), 
+              radial-gradient(circle at center, rgba(128, 0, 32, 0.3) 0%, transparent 70%),
+              url('assets/images/palace.png') center/cover no-repeat;
+}
+
+.events-hero {
+  background: linear-gradient(180deg, rgba(14, 10, 18, 0.78) 0%, rgba(18, 14, 22, 0.94) 100%), 
+              radial-gradient(circle at center, rgba(128, 0, 32, 0.35) 0%, transparent 70%),
+              url('assets/images/gala.png') center/cover no-repeat;
+}
+
+.about-hero {
+  background: linear-gradient(180deg, rgba(14, 10, 18, 0.78) 0%, rgba(18, 14, 22, 0.94) 100%), 
+              radial-gradient(circle at center, rgba(128, 0, 32, 0.35) 0%, transparent 70%),
+              url('assets/images/mandap.png') center/cover no-repeat;
+}
+
+.page-hero .breadcrumb-nav,
+.contact-hero .breadcrumb-nav,
+.events-hero .breadcrumb-nav,
+.about-hero .breadcrumb-nav {
   display: inline-flex;
   align-items: center;
   font-size: 0.85rem;
@@ -536,23 +557,35 @@ select:-webkit-autofill {
   letter-spacing: 0.1em;
 }
 
-.contact-hero .breadcrumb-nav a {
+.page-hero .breadcrumb-nav a,
+.contact-hero .breadcrumb-nav a,
+.events-hero .breadcrumb-nav a,
+.about-hero .breadcrumb-nav a {
   color: var(--clr-champagne-gold);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
-.contact-hero .breadcrumb-nav a:hover {
+.page-hero .breadcrumb-nav a:hover,
+.contact-hero .breadcrumb-nav a:hover,
+.events-hero .breadcrumb-nav a:hover,
+.about-hero .breadcrumb-nav a:hover {
   color: #ffffff;
 }
 
-.contact-hero .breadcrumb-nav .active {
+.page-hero .breadcrumb-nav .active,
+.contact-hero .breadcrumb-nav .active,
+.events-hero .breadcrumb-nav .active,
+.about-hero .breadcrumb-nav .active {
   color: #e2dbe9;
   font-weight: 500;
 }
 
-.contact-hero .hero-badge {
+.page-hero .hero-badge,
+.contact-hero .hero-badge,
+.events-hero .hero-badge,
+.about-hero .hero-badge {
   background: rgba(212, 175, 55, 0.15);
   border: 1.5px solid var(--clr-champagne-gold);
   color: var(--clr-champagne-gold);
@@ -567,9 +600,12 @@ select:-webkit-autofill {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 0 0 15px rgba(212, 175, 55, 0.25);
 }
 
-.contact-hero .hero-title-main {
+.page-hero .hero-title-main,
+.contact-hero .hero-title-main,
+.events-hero .hero-title-main,
+.about-hero .hero-title-main {
   font-family: var(--font-heading);
-  font-size: 3.4rem;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
   font-weight: 800;
   letter-spacing: 0.02em;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
