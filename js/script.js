@@ -235,6 +235,43 @@ function initProfilePage() {
   if (profileLogoutBtn) {
     profileLogoutBtn.addEventListener('click', handleLogout);
   }
+
+  // Delete Account Confirmation Button Handler
+  const confirmDeleteBtn = document.getElementById('confirmDeleteAccountBtn');
+  if (confirmDeleteBtn) {
+    confirmDeleteBtn.addEventListener('click', handleDeleteAccount);
+  }
+}
+
+function handleDeleteAccount() {
+  const currentUser = getCurrentUser();
+  if (!currentUser) return;
+
+  // Remove user from registered users array
+  const users = JSON.parse(localStorage.getItem('shubham_users')) || [];
+  const updatedUsers = users.filter(u => u.email !== currentUser.email);
+  localStorage.setItem('shubham_users', JSON.stringify(updatedUsers));
+
+  // Remove associated bookings for this user
+  const bookings = JSON.parse(localStorage.getItem('shubham_bookings')) || [];
+  const updatedBookings = bookings.filter(b => b.userEmail !== currentUser.email);
+  localStorage.setItem('shubham_bookings', JSON.stringify(updatedBookings));
+
+  // Remove active session
+  localStorage.removeItem('shubham_current_user');
+
+  // Dismiss modal if open
+  const modalEl = document.getElementById('deleteAccountModal');
+  if (modalEl && typeof bootstrap !== 'undefined') {
+    const modalInstance = bootstrap.Modal.getInstance(modalEl);
+    if (modalInstance) modalInstance.hide();
+  }
+
+  showToast('Your account and booking history have been permanently deleted.', 'danger');
+
+  setTimeout(() => {
+    window.location.href = 'index.html';
+  }, 1200);
 }
 
 function renderUserBookings(userEmail) {

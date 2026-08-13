@@ -86,9 +86,14 @@
               <p class="mb-0 text-light" id="profileCityDisplay">Jaipur, India</p>
             </div>
 
-            <button class="btn btn-outline-gold btn-sm w-100 mt-2" id="profileLogoutBtn">
-              <i class="ri-logout-box-r-line me-1"></i> Logout Account
-            </button>
+            <div class="d-grid gap-2 mt-2">
+              <button class="btn btn-outline-gold btn-sm" id="profileLogoutBtn">
+                <i class="ri-logout-box-r-line me-1"></i> Logout Account
+              </button>
+              <button class="btn btn-outline-danger btn-sm" id="profileDeleteBtn" data-bs-toggle="modal" data-bs-target="#deleteAccountModal">
+                <i class="ri-delete-bin-line me-1"></i> Delete Account
+              </button>
+            </div>
           </div>
 
           <!-- Edit Profile Card -->
@@ -219,6 +224,33 @@
         </div>
         <div class="modal-footer border-top border-secondary p-3">
           <button type="button" class="btn btn-gold btn-sm px-4" data-bs-dismiss="modal">I Understand & Accept</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       DELETE ACCOUNT CONFIRMATION MODAL
+       ========================================== -->
+  <div class="modal fade" id="deleteAccountModal" tabindex="-1" aria-labelledby="deleteAccountModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-royal-dark text-white border-danger">
+        <div class="modal-header border-bottom border-danger">
+          <h5 class="modal-title text-danger" id="deleteAccountModalLabel">
+            <i class="ri-error-warning-line me-2"></i> Delete Account Confirmation
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4 text-center">
+          <div class="rounded-circle bg-danger text-white d-inline-flex align-items-center justify-content-center mb-3 shadow" style="width: 64px; height: 64px; font-size: 2rem;">
+            <i class="ri-delete-bin-2-line"></i>
+          </div>
+          <h5 class="text-gold mb-2">Are you absolutely sure?</h5>
+          <p class="text-light opacity-90 small mb-0" style="line-height: 1.6;">This action cannot be undone. Your user profile details and booked events history will be permanently removed.</p>
+        </div>
+        <div class="modal-footer border-top border-secondary p-3">
+          <button type="button" class="btn btn-outline-gold btn-sm px-3" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-danger btn-sm px-4" id="confirmDeleteAccountBtn">Yes, Delete Account</button>
         </div>
       </div>
     </div>
