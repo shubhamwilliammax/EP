@@ -103,7 +103,8 @@ function initSignupForm() {
 
     const name = document.getElementById('signupName').value.trim();
     const email = document.getElementById('signupEmail').value.trim().toLowerCase();
-    const phone = document.getElementById('signupPhone').value.trim();
+    const phoneElem = document.getElementById('signupPhone');
+    const phone = phoneElem ? phoneElem.value.trim() : '';
     const city = document.getElementById('signupCity').value.trim();
     const password = document.getElementById('signupPassword').value;
     const confirmPassword = document.getElementById('signupConfirmPassword').value;
